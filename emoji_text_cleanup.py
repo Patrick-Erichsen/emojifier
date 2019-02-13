@@ -1,5 +1,6 @@
 import logging
 import emoji
+import re
 
 class EmojiTextCleaner():
 
@@ -23,7 +24,7 @@ class EmojiTextCleaner():
         return cleaned_line
 
     def main(self):
-        clean_text = open('emojipasta_clean.txt', 'a')
+        clean_text = open('emojipasta_clean_multiples.txt', 'a')
         with open('emojipasta_raw.txt', 'r') as raw_text:
             line = raw_text.readline()
             while line:
@@ -42,13 +43,15 @@ class EmojiTextCleaner():
                         cleaned_label_with_text = ""
                         emoji_index = index
                         is_emoji_block = True
-                        emoji_labels = ""
+                        emoji_count = 0
+                        emoji_labels = "__label__"
                         next_char = ""
 
                         ## Get emoji labels
                         while is_emoji_block:
                             if self.is_emoji(line[emoji_index]):
-                                emoji_labels += "__label__" + line[emoji_index] + " "
+                                emoji_count += 1
+                                emoji_labels += line[emoji_index]
 
                             next_char = line[emoji_index + 1]
 
@@ -59,12 +62,13 @@ class EmojiTextCleaner():
                             else:
                                 emoji_index += 1
 
+                        emoji_labels += " "
+
                         ## Get text to attatch to emoji labels
                         text_index = index - 1
                         is_text_block = True
                         has_seen_space = False
                         text = ""
-                        prev_char = ""
 
                         while is_text_block:
                             if line[text_index] == " ":
@@ -75,6 +79,9 @@ class EmojiTextCleaner():
                             elif self.is_emoji(line[text_index]):
                                 is_text_block = False
                                 break
+                            elif not line[text_index].isalpha() and not line[text_index] == "'":
+                                is_text_block = False
+                                break
                             else:
                                 has_seen_space = True
                                 text = line[text_index] + text
@@ -82,7 +89,7 @@ class EmojiTextCleaner():
 
                         text = text.strip()
 
-                        if text:
+                        if text and emoji_count > 1:
                             clean_text.write(emoji_labels + text + "\n")
 
                         index = emoji_index ## Skip characters that we know are have been parsed
