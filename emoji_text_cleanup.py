@@ -1,5 +1,6 @@
 import logging
 import emoji
+import re
 
 class EmojiTextCleaner():
 
@@ -64,7 +65,6 @@ class EmojiTextCleaner():
                         is_text_block = True
                         has_seen_space = False
                         text = ""
-                        prev_char = ""
 
                         while is_text_block:
                             if line[text_index] == " ":
@@ -73,6 +73,9 @@ class EmojiTextCleaner():
                                 text_index -= 1
                                 continue
                             elif self.is_emoji(line[text_index]):
+                                is_text_block = False
+                                break
+                            elif not line[text_index].isalpha():
                                 is_text_block = False
                                 break
                             else:
