@@ -24,7 +24,7 @@ class EmojiTextCleaner():
         return cleaned_line
 
     def main(self):
-        clean_text = open('emojipasta_clean_multiples.txt', 'a')
+        clean_text = open('emojipasta_clean.txt', 'a')
         with open('emojipasta_raw.txt', 'r') as raw_text:
             line = raw_text.readline()
             while line:
@@ -89,7 +89,7 @@ class EmojiTextCleaner():
 
                         text = text.strip()
 
-                        if text and emoji_count > 1:
+                        if text and emoji_count < 7:
                             clean_text.write(emoji_labels + text + "\n")
 
                         index = emoji_index ## Skip characters that we know are have been parsed
