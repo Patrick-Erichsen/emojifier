@@ -75,7 +75,7 @@ class EmojiTextCleaner():
                             elif self.is_emoji(line[text_index]):
                                 is_text_block = False
                                 break
-                            elif not line[text_index].isalpha():
+                            elif not line[text_index].isalpha() and not line[text_index] == "'":
                                 is_text_block = False
                                 break
                             else:
