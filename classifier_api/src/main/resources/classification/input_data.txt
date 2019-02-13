@@ -130,7 +130,7 @@ __label__coffee __label__aging What happens when I store coffee in the refrigera
 __label__fruit __label__pie __label__glaze Creating a recipe for a glazed fruit pie - what starch to use?
 __label__bread __label__dough Lightening Bread
 __label__measurements __label__language Converting teaspoon/tablespoon measurements to mL?
-__label__vegetables __label__asian-cuisine __label__boiling What is this Asian dish made with boiled vegetables? 
+__label__vegetables __label__asian-cuisine __label__boiling What is this Asian dish made with boiled vegetables?
 __label__popcorn Simulating Orville's Cracked Pepper and Salt Popcorn
 __label__freezing __label__refrigerator __label__history Why should food be frozen quickly?
 __label__cast-iron How do I recover from overheating my cast-iron skillet?
@@ -1254,7 +1254,7 @@ __label__gelling-agents How can I make a panna cotta based on Jelly bellys?
 __label__substitutions __label__resources How to cook for a diabetic without making the other guests suffer
 __label__food-identification __label__thai-cuisine What is glooi in English?
 __label__braising What are the advantages of a two-day braise?
-__label__barbecue __label__ribs __label__brining How to avoid ridiculously salty results when brining?  
+__label__barbecue __label__ribs __label__brining How to avoid ridiculously salty results when brining?
 __label__tomatoes __label__measurements __label__history Did tomato paste come in only one size of can in the 1950s?
 __label__spicy-hot Medium sauces versus Mild!
 __label__meat __label__roast __label__cooking-myth Does searing meat lock in moisture?
@@ -1422,7 +1422,7 @@ __label__cheese __label__grilling __label__sandwich Ultimate Grilled Cheese : Ke
 __label__baking What will happen to my Pecan tassies if I use too much butter?
 __label__baking __label__vinegar __label__bread Why is there vinegar in the bread recipe?
 __label__vegetables __label__salt __label__jam Vegetable "jam" with salt instead of sugar
-__label__equipment __label__middle-eastern-cuisine __label__hummus Is it possible to create good hummus without a food processor? 
+__label__equipment __label__middle-eastern-cuisine __label__hummus Is it possible to create good hummus without a food processor?
 __label__storage-lifetime __label__potatoes __label__stock Storing potato water: how long can it be refrigerated?
 __label__sauce When should I not use a cornstarch slurry?
 __label__eggs __label__language What do you call a scrambled omelette?
@@ -5915,7 +5915,7 @@ __label__substitutions __label__fruit Fresh blueberries vs dried blueberries in 
 __label__conversion How to convert a cup to SI units?
 __label__substitutions __label__corn Can "cream-style" corn substitute for creamed corn in cornbread?
 __label__mortar __label__pestle What kind of mortar and pestle will be strong enough for grinding date pits?
-__label__fruit __label__sugar __label__candy __label__coloring What effects will xylitol have as a sugar substitute?  
+__label__fruit __label__sugar __label__candy __label__coloring What effects will xylitol have as a sugar substitute?
 __label__cookies __label__crackers Why do Pocky and other "stick" biscuits have this distinct burn pattern?
 __label__eggs __label__bagels How to prepare eggs in shape suited for bagel?
 __label__wine __label__grapes Why are predominantly grapes an ingredient in wine?
@@ -6338,7 +6338,7 @@ __label__chocolate __label__cream __label__chocolate-truffles How can I avoid ch
 __label__culinary-uses __label__basil __label__flowers What uses are there for basil flowers?
 __label__parsnip How to clean and trim parsnips?
 __label__bread What edible solution can I cover bread in to make it waterproof?
-__label__food-safety __label__gelatin __label__cheesecake Is high gelatin concentration in cheesecake unsafe? 
+__label__food-safety __label__gelatin __label__cheesecake Is high gelatin concentration in cheesecake unsafe?
 __label__food-safety __label__pan Cooking in painted metal pots
 __label__pork __label__roast __label__ham Smoked ham roast: what do I do with it?
 __label__food-safety __label__temperature __label__thermometer What does a meat thermometer display if the meat temperature is uneven?
@@ -7003,7 +7003,7 @@ __label__baking __label__substitutions __label__cookies Suggestions for a substi
 __label__oil __label__seasoning African palm oil locusts seasoning & preparation?
 __label__food-safety __label__cooking-time Do you need to cook a casserole with raw eggs before you freeze it?
 __label__cookies How to solve under-baked cookie centers?
-__label__bread __label__temperature How can I warm bread making ingredients to room temperature? 
+__label__bread __label__temperature How can I warm bread making ingredients to room temperature?
 __label__vegetables __label__glaze __label__asparagus How can I successfully glaze asparagus?
 __label__steak Can I get a good crust on a thin steak?
 __label__dough How to prevent dough from stopping food processor motor
@@ -8109,7 +8109,7 @@ __label__roast __label__roast-beef Should you "rest" a roast?
 __label__dough __label__japanese-cuisine __label__noodles __label__buckwheat Why is my Buckwheat soba noodle dough crumbling?
 __label__eggs __label__vegetables Proper preparation of veggies for an egg scramble
 __label__japanese-cuisine Is it really necessary to wipe the powder off of dried kombu?
-__label__baking __label__muffins What caused my blueberry muffins to come out flat? 
+__label__baking __label__muffins What caused my blueberry muffins to come out flat?
 __label__brisket can tough brisket get softer?
 __label__baking __label__oats __label__granola How can I make granola that clumps?
 __label__eggs __label__egg-whites __label__yolk When carefully separating eggs, what to do with the chalazae?
@@ -9426,7 +9426,7 @@ __label__food-safety __label__storage-method __label__cleaning __label__flour Wh
 __label__sauce __label__pizza __label__tomatoes What alternatives are there to tomato based pizza sauces?
 __label__fruit How to pick good clementines and mandarins at the supermarket?
 __label__grilling __label__pan __label__sausages __label__stove __label__frying-pan How can I cheaply cook a bratwurst that is similar to a grilled brat with only access to an oven or stovetop?
-__label__grilling __label__camping __label__fire How can I control the heat when cooking on a campfire? 
+__label__grilling __label__camping __label__fire How can I control the heat when cooking on a campfire?
 __label__vegetables Beets too big for quality?
 __label__boiling Using a wooden spoon to prevent pots from boiling over?
 __label__food-science __label__alcohol Alcohol evaporation

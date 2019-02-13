@@ -1,6 +1,7 @@
 package com.hackathon.emojifier.services;
 
 import com.github.jfasttext.JFastText;
+import com.hackathon.emojifier.Utilities.ClassifierConfiguration;
 import com.hackathon.emojifier.Utilities.Constants;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +24,9 @@ public class Classifier {
         jFastText.runCmd(new String[] {
             "supervised",
             "-input", Constants.PATH_TO_LABELED_DATA,
-            "-output", Constants.PATH_TO_OUTPUT_MODEL
+            "-output", Constants.PATH_TO_OUTPUT_MODEL,
+            "-epoch" , ClassifierConfiguration.EPOCHS,
+            "-lr", ClassifierConfiguration.LEARNING_RATE
         });
 
         jFastText.loadModel(String.format("%s.bin", Constants.PATH_TO_OUTPUT_MODEL));
