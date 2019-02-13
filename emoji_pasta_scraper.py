@@ -23,7 +23,7 @@ class EmojiPastaScraper():
 
     def init_reddit(self):
         session = requests.Session()
-        session.verify = False ## ignore cert issues 
+        session.verify = False ## ignore cert issues
 
         self.reddit = praw.Reddit(client_id=self.REDDIT_CLIENT_ID,
                     			  client_secret=self.REDDIT_CLIENT_SECRET,
@@ -35,16 +35,15 @@ class EmojiPastaScraper():
         self.subreddit = self.reddit.subreddit(self.SUBREDDIT_NAME)
 
     def main(self):
-        f = open("emojipasta.txt", "a")
         count = 0
 
-        for submission in self.subreddit.new(limit=10000):
-            text = submission.selftext.replace("\n", " ")
-            text += "\n"
-            f.write(text)
-            count += 1
+        with open('emojipasta_raw.txt', 'a') as f:  
+            for submission in self.subreddit.new(limit=10000):
+                text = submission.selftext.replace("\n", " ")
+                text += "\n"
+                f.write(text)
+                count += 1
 
-        f.close()
         logging.info("Scraped " + str(count) + " emoji pastas 😂👌")
 
 if __name__ == "__main__":
