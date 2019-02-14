@@ -4,9 +4,7 @@ import com.github.jfasttext.JFastText;
 import com.hackathon.emojifier.Utilities.ClassifierConfiguration;
 import com.hackathon.emojifier.Utilities.Constants;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import jdk.nashorn.internal.ir.Labels;
 import org.springframework.stereotype.Component;
 
 @Component("classifier")
@@ -15,16 +13,8 @@ public class Classifier {
     private JFastText jFastText = new JFastText();
 
     Classifier() {
-
         log("I'm being created!");
         trainData();
-
-        List<String> allLabels = jFastText.getLabels();
-
-        for (String l : allLabels) {
-
-            System.out.println(l);
-        }
     }
 
     private void trainData() {
