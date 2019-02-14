@@ -2,6 +2,6 @@ package com.hackathon.emojifier.Utilities;
 
 public class Constants {
 
-    public static String PATH_TO_LABELED_DATA = "/Users/z003bzg/Documents/Coding/hackathon/learning_learning/emoji-pastification/classifier_api/src/main/resources/classification/emojipasta_clean.txt";
-    public static String PATH_TO_OUTPUT_MODEL = "/Users/z003bzg/Documents/Coding/hackathon/learning_learning/emoji-pastification/classifier_api/src/main/resources/classification/output_model.model";
+    public static String PATH_TO_LABELED_DATA = "src/main/resources/classification/emojipasta_clean.txt";
+    public static String PATH_TO_OUTPUT_MODEL = "src/main/resources/classification/output_model.model";
 }
